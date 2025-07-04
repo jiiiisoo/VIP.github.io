@@ -84,7 +84,7 @@
               Sooyeon Park,
             </span>
             <span class="author-block">
-              Youngjae Yu,
+              Youngjae Yu
             </span>
           </div>
 
@@ -216,6 +216,12 @@
   </div>
 </section> -->
 
+<div class="columns is-centered has-text-centered">
+  <div class="column is-four-fifths">
+    <img src="./image/VIP_teaser.png" style="max-width: 100%; height: auto;">
+  </div>
+</div>
+
 
 <section class="section">
   <div class="container is-max-desktop">
@@ -225,31 +231,18 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present the first method capable of photorealistically reconstructing a non-rigidly
-            deforming scene using photos/videos captured casually from mobile phones.
-          </p>
-          <p>
-            Our approach augments neural radiance fields
-            (NeRF) by optimizing an
-            additional continuous volumetric deformation field that warps each observed point into a
-            canonical 5D NeRF.
-            We observe that these NeRF-like deformation fields are prone to local minima, and
-            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-            more robust optimization.
-            By adapting principles from geometry processing and physical simulation to NeRF-like
-            models, we propose an elastic regularization of the deformation field that further
-            improves robustness.
-          </p>
-          <p>
-            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity.
+            Despite the remarkable success of text-to-video (T2V) generation, its large memory requirements limit deployment in resource-constrained 
+            environments, leading to extensive research on model pruning and knowledge distillation to enhance efficiency while preserving 
+            performance. However, existing distillation methods primarily rely on supervised fine-tuning (SFT) loss, which, due to the reduced capacity
+             of pruned models, struggles to capture fine-grained details. This leads to averaged predictions and ultimately degrades overall quality. 
+             To mitigate this challenge, we propose an effective distillation method, ReDPO, that combines DPO and SFT, leveraging DPO’s ability to 
+             guide the student model in learning preferences for its limiting properties while de-emphasizing less critical ones, complemented by SFT 
+             to enhance overall performance. Along with ReDPO, our framework, V.I.P. includes filtering and curation for high-quality datasets, as well
+            as a step-by-step online approach for more effective learning. We implement our method on two baseline models, VideoCrafter2 and AnimateDiff,
+            achieving parameter reduction of 36.2% in VideoCrafter and 67.5% in AnimateDiff motion module, while maintaining or even surpassing the 
+            performance of full models. Further experiments validate the effectiveness of our ReDPO loss and V.I.P. framework, demonstrating their impact 
+            on efficient and high-quality video generation.
+
           </p>
         </div>
       </div>

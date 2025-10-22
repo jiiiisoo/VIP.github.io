@@ -139,6 +139,9 @@
   <div class="container is-max-desktop">
     <div class="hero-body">
       <h2 class="subtitle has-text-centered">
+      TL;DR: We propose an iterative online preference learning approach for distillation that overcomes the limitations of conventional methods and effectively enhances pruned model performance
+      </h2>
+      <h2 class="subtitle has-text-centered">
         "Whale in space near an antimatter star, giant space squid emerges from star."
       </h2>
       <video id="teaser" autoplay muted loop playsinline height="100%">
@@ -244,6 +247,23 @@
       <div class="column is-full-width">
         <h2 class="title is-3">Motivation</h2>
         <img src="./static/images/VIP_motivation.png" style="max-width: 50%; height: auto;">
+        <div class="content has-text-justified">
+          <p>
+            Conventional distillation methods (SFT) result in overly smooth distributions in low-capacity students. Our proposed method (ReDPO) 
+            effectively reallocates the student’s limited capacity toward the critical mode while preventing over-optimization.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Paper video. -->
+  </div>
+</section>
+
+    <!-- Paper video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Method</h2>
+        <img src="./static/images/main_method.png" style="max-width: 50%; height: auto;">
         <div class="content has-text-justified">
           <p>
             Conventional distillation methods (SFT) result in overly smooth distributions in low-capacity students. Our proposed method (ReDPO) 
